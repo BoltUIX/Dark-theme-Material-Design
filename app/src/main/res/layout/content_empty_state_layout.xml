@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/empty_state_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:colorBackground"
+    android:gravity="center">
+    <!--    android:background="?attr/background"
+-->
+
+    <ImageView
+        android:id="@+id/empty_state_image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_250"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_empty" />
+
+    <TextView
+        android:id="@+id/empty_state_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/empty_state_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_12"
+        android:fontFamily="@font/jost_medium"
+        android:gravity="center_horizontal"
+        android:text="@string/text_no_notes"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+ />
+
+
+    <TextView
+        android:id="@+id/empty_state_description"
+        android:layout_width="@dimen/dimen_250"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/empty_state_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_12"
+        android:fontFamily="@font/jost_book"
+        android:gravity="center_horizontal"
+        android:text="@string/text_empty_state_description"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+/>
+
+</RelativeLayout>
